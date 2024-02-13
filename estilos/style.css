@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+:root {
+    --corprincipal: #000000;
+    --corsecundaria: #88c1d7;
+    --cortitulo: #000000;
+}
+
+body {
+    background-image: url('../imagens/Fernando\ Pessoa.jpg');
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(255, 255, 255, 0.7); /* Cor de fundo com 70% de opacidade */
+    color: #000; /* Cor do texto */
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5); /* Adiciona uma sombra sutil ao texto */
+}
+
+.cabeçalho {
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+}
+
+.cabeçalho h1 {
+    color: var(--cortitulo);
+    font-size: 2em; 
+    text-transform: uppercase;
+    margin-top: 10px; 
+    text-align: center; 
+    letter-spacing: 2px; 
+    text-shadow: 2px 2px 4px rgb(255, 255, 255);
+}
+
+.cabeçalho img {
+    max-width: 10%;
+    max-height: 10%;
+    width: auto;
+    height: auto;
+}
+
+.container-input {
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 5%;
+}
+
+.container-input .input {
+    flex: 1;
+}
+#input-texto {
+    width: 100%;
+    height: 100%;
+    font-size: 24px;
+    color: var(--cortitulo);
+    background-color: rgba(0, 0, 0, 0.9); 
+    border: 2px solid var(--corprincipal); 
+    border-radius: 10px; 
+    padding: 15px; 
+    box-sizing: border-box; 
+    text-transform: uppercase;
+}
+
+#input-texto:focus {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); 
+    outline: none; 
+}
+
+#output {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid var(--cortitulo);
+    border-radius: 20px;
+    padding: 15px; 
+    margin-left: 5%;
+    background-color: rgba(0, 0, 0, 0.9); 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); 
+}
+
+#output h2 {
+    text-align: center;
+    color: var(--cortitulo);
+    font-size: 2em; 
+    margin-top: 1px; 
+    text-align: center; 
+    letter-spacing: 2px; 
+    text-shadow: 2px 2px 4px rgb(243, 240, 240); 
+}
+
+
+
+#output span {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 10px; 
+    color:rgb(255, 255, 255);
+    text-align:justify; 
+}
+
+
+#output img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px auto; 
+}
+
+#output h2 {
+    text-align: center;
+    font-size: 1.5em;
+    color: var(--cortitulo);
+}
+
+#output span {
+    font-size: 0.8em;
+    text-align: center;
+}
+
+#output img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px auto;
+}
+
+
+.container-bnt button{
+    border: 2px solid var(--cortitulo);
+    border-radius: 10px;
+    text-decoration: none;
+    color: #000000;
+    width: 150px;
+    height: 50px;
+    margin-left: 4%;
+    cursor: pointer;
+}
+
+.btn-copiar{
+    border: 2px solid var(--cortitulo);
+    border-radius: 10px;
+    text-decoration: none;
+    color: #000000;
+    width: 150px;
+    height: 50px;
+    margin-bottom: 10%;
+    margin-left: 30%;
+    cursor: pointer;
+}
+
+.container-bnt button:hover{
+   border: 2px solid var(--corsegundaria);
+   transition: 0.5s all;
+   color :rgba(27, 0, 0, 0.5);
+}
+
+
+.rodape {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.icons {
+    margin-right: 20px; 
+}
+
+.icons ion-icon {
+    font-size: 100px; 
+    color: white; 
+    margin-right: 10px;
+}
+
+.rodape h3 {
+    font-size: 16px; 
+    margin: 0;
+    text-shadow: 2px 2px 4px rgb(255, 255, 255);
+}
